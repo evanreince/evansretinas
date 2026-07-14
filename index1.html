@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Photography portfolio of Evan Reince-Seibert." />
+    <title>Evan Reince-Seibert — Photography</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Libre+Baskerville:ital@0;1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="has-entrance">
+    <section class="entrance" aria-label="Portfolio entrance">
+      <video class="entrance-film" autoplay muted loop playsinline poster="public/images/perros/IMG_4071.jpg">
+        <source src="public/video/swing.mp4" type="video/mp4" />
+      </video>
+      <div class="shade"></div>
+      <div class="entrance-copy"><p>EVAN REINCE-SEIBERT</p><div><button class="sound" type="button" aria-pressed="false">Sound off</button><button class="enter" type="button">Enter <span>↗</span></button></div></div>
+    </section>
+
+    <header class="site-header">
+      <a class="logo" href="#top">EVAN<br />REINCE-SEIBERT</a>
+      <button class="menu" type="button" aria-expanded="false" aria-controls="nav">Menu <i></i></button>
+      <nav id="nav"><a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <img src="public/images/perros/IMG_4071.jpg" alt="Black-and-white photograph from Perros" fetchpriority="high" />
+        <p>Selected photographs / 2022—2026</p>
+      </section>
+      <section id="work" class="intro section"><p class="kicker">01 / Work</p><h1>A moving archive<br />of ordinary magic.</h1><p class="lede">Photographs made between the street, the home, and the places in between.</p></section>
+      <section class="project-index section" aria-label="Photography projects">
+        <p class="kicker">Swipe or tap to enter</p>
+        <div class="gallery-tiles">
+          <button class="gallery-tile slime" data-open-gallery="stills"><span>01 / 04</span><strong>2022—2024<br />Stills</strong><i>53 photographs ↗</i></button>
+          <button class="gallery-tile purple" data-open-gallery="hipfire"><span>02 / 04</span><strong>BW<br />Hipfire</strong><i>44 photographs ↗</i></button>
+          <button class="gallery-tile orange" data-open-gallery="film"><span>03 / 04</span><strong>Film</strong><i>32 photographs ↗</i></button>
+          <button class="gallery-tile blue" data-open-gallery="perros"><span>04 / 04</span><strong>Perros</strong><i>16 photographs ↗</i></button>
+        </div>
+      </section>
+      <section id="about" class="about section"><p class="kicker">02 / About</p><div><h2>Evan Reince-Seibert is a photographer following gestures, light, and the accidental poetry of everyday life.</h2><div class="bio"><p>This is an evolving selection of photographs made in public and private spaces—an archive of encounters and small details that stay with you.</p><p>Available for editorial, documentary, and selected commercial commissions.</p></div></div></section>
+      <section id="contact" class="contact section"><p class="kicker">03 / Contact</p><div><div><h2>Let’s make<br /><em>something.</em></h2><p>For commissions, prints, collaborations, or a simple hello.</p></div><form id="inquiry"><label>Name<input name="name" autocomplete="name" required /></label><label>Email<input name="email" type="email" autocomplete="email" required /></label><label>Message<textarea name="message" rows="5" required></textarea></label><button type="submit">Send inquiry <span>↗</span></button><p class="form-message" aria-live="polite"></p></form></div></section>
+    </main>
+    <footer><span>© 2026 Evan Reince-Seibert</span><a href="#top">Back to top ↑</a></footer>
+    <dialog class="gallery-browser"><header><button class="gallery-close" aria-label="Close gallery">×</button><div><p class="browser-count"></p><h2 class="browser-title"></h2></div><div class="browser-controls"><button class="previous" aria-label="Previous gallery">←</button><button class="next" aria-label="Next gallery">→</button></div></header><div class="browser-grid"></div><p class="swipe-note">Swipe left or right to change projects</p></dialog>
+    <dialog class="lightbox"><button aria-label="Close image" class="close">×</button><img src="" alt="" /><p></p></dialog>
+    <script src="script.js"></script>
+  </body>
+</html>
